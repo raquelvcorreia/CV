@@ -353,3 +353,7 @@ page[size="A4"] {
   left: -0.79cm;
   border: 0.1cm solid #4b585e;
 }
+/* Extra space */
+p.big {
+  line-height: 1cm;
+}
