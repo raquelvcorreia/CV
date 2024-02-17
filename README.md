@@ -2,4 +2,4 @@
 
 https://raquelvcorreia.github.io/CV/
 
-CV updated Nov. 2023
+CV updated Jan. 2024
