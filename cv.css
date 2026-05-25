@@ -1,5 +1,5 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Inter', sans-serif;
     background: #333;
     width: 21cm;
     height: 29.7cm;
@@ -40,7 +40,7 @@ page {
 
 .rightPanel {
     width: 75%;
-    padding: 0.5cm;
+    padding: 0.4cm;
 }
 
 
@@ -75,7 +75,7 @@ page {
 .contactsList,
 .contactsList a {
     color: #fff;
-    font-size: 0.38cm;
+    font-size: 0.36cm;
     text-decoration: none;
 }
 
@@ -85,7 +85,7 @@ page {
 
 .bottomContactsList {
     position: relative;
-    top: 16cm;
+    top: 16.5cm;
     width: 100%;
     margin: 0;
     padding: 0.2cm 0;
@@ -146,7 +146,7 @@ page {
     width: 100%;
     color: #eee;
     list-style-type: none;
-    font-size: 0.4cm;
+    font-size: 0.38cm;
     margin: 0 0 0 0.1cm;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -200,27 +200,31 @@ page {
 
 .timelineEntryTitle,
 .timelineEntryTitle a {
+    line-height: 0.34cm;
+    vertical-align: top;
     color: #000;
 }
 
 .timelineEntryTitle {
-    font-size: 0.38cm;
+    font-size: 0.34cm;
     font-weight: bold;
 }
 
 .timelineEntryTitle a {
-    font-size: 0.34cm;
+    font-size: 0.32cm;
     font-weight: bold;
     text-decoration: underline;
 }
 
 .timelineEntryLocationDate {
-    font-size: 0.35cm;
+    vertical-align: top;
+    font-size: 0.31cm;
+    line-height: 0.34cm;
     font-weight: normal;
 }
 
 .timelineEntryDetails {
-    font-size: 0.37cm;
+    font-size: 0.38cm;
     text-align: left;
     padding: 0;
     margin: 0 0 0 1cm;
@@ -228,6 +232,9 @@ page {
     margin-block-end: 0.5cm;
 }
 
+.timelineEntryDetails li {
+    padding: 0 0 0.1cm 0;
+}
 
 .additionalTrainingList {
     font-size: 0.38cm;
@@ -239,7 +246,7 @@ page {
 }
 
 .additionalTrainingList li {
-    padding: 0 0 0.1cm 0;
+    padding: 0 0 0.15cm 0;
 }
 
 
@@ -261,7 +268,7 @@ page {
 }
 
 .publicationsList li {
-    padding: 0 0 0.1cm 0;
+    padding: 0 0 0.2cm 0;
 }
 
 .publicationsList li,
@@ -270,7 +277,7 @@ page {
 }
 
 .publicationsList li a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .publicationsList li b {
