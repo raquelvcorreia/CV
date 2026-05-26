@@ -3,55 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="favicon-cv.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ana R. Correia - CV</title>
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            background-color: #f0f0f0;
-        }
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #212121;
+    }
 
-        .pdf-frame {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
-        }
+    .pdfDownloadBox {
+        display: block;
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        font-family: sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 5px 0 0 0;
+    }
 
-        .fallback-msg {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: sans-serif;
-            text-align: center;
-            color: #333;
-        }
+    .pdfDownloadLink {
+        text-decoration: underline;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 32px;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+    }
 
-        .fallback-msg a {
-            color: #0366d6;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        .fallback-msg a:hover {
-            text-decoration: underline;
-        }
+    .pdfDownloadIcon {
+        width: auto;
+        height: 26px;
+        vertical-align: top;
+        margin: 0 5px 0 0;
+        padding: 0;
+    }
+
+    .pdfDownloadLink,
+    .pdfDownloadIcon {
+        color: #eee;
+    }
+
+    .pdfContainer {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        bottom: 0px;
+    }
+
+    .pdfFrame {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
     </style>
 </head>
 
 <body>
-    <object class="pdf-frame" data="AnaRCorreia.pdf" type="application/pdf">
-        <div class="fallback-msg">
-            <p>Your browser does not support embedded PDFs.</p>
-            <p>You can <a href="AnaRCorreia.pdf" download>click here to download the PDF</a> instead.</p>
-        </div>
-    </object>
+    <div class="pdfDownloadBox">
+        <a class="pdfDownloadLink" href="AnaRCorreia-CV.pdf" target="_blank">
+            <img class="pdfDownloadIcon" src="icon-pdf.svg" />Download CV in PDF Format
+        </a>
+    </div>
+    <div class="pdfContainer">
+        <iframe class="pdfFrame" src="https://docs.google.com/gview?url=https%3A%2F%2Fraquelvcorreia.github.io%2FCV%2FAnaRCorreia-CV.pdf&embedded=true" title="Ana R. Correia - CV"></iframe>
+    </div>
 </body>
 
 </html>
